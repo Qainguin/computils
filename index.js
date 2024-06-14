@@ -11,6 +11,12 @@ let prevY = null;
 
 let draw = false;
 
+// Get the clear button element
+const clearButton = document.getElementById("clearButton");
+
+// Add event listener to the clear button
+clearButton.addEventListener("click", clearCanvas);
+
 // Set draw to true when mouse is pressed or touch starts
 canvas.addEventListener("mousedown", startDrawing);
 canvas.addEventListener("touchstart", startDrawing);
@@ -69,4 +75,8 @@ function resizeCanvas() {
     ctx = canvas.getContext("2d");
     ctx.lineWidth = 5;
     ctx.strokeStyle = "red";
+}
+
+function clearCanvas() {
+    ctx.clearRect(0, 0, canvas.width, canvas.height);
 }
