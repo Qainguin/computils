@@ -2,7 +2,7 @@
     "name": "vexutils",
     "short_name": "vexutils",
     "start_url": ".",
-    "theme_color": "#ff4040",
+    "theme_color": "#ffffff",
     "background_color": "#ffffff",
     "display": "standalone",
     "icons":[

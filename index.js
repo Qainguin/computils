@@ -1,14 +1,13 @@
 const canvas = document.getElementById("noteCanvas")
-canvas.height = window.innerHeight
 canvas.width = window.innerWidth
+canvas.height = window.innerHeight
+
 
 const ctx = canvas.getContext("2d")
+ctx.strokeStyle = "red";
 
 let prevX = null;
 let prevY = null;
-
-ctx.lineWidth = 5;
-ctx.strokeStyle = "#ff4040";
 
 let draw = false;
 
@@ -47,4 +46,14 @@ window.addEventListener("mousemove", (e) => {
     prevX = currentX;
     prevY = currentY;
     console.log("Drawing...")
+})
+
+window.addEventListener("resize", (e) => {
+    canvas.width = window.innerWidth
+    canvas.height = window.innerHeight
+
+    ctx = canvas.getContext("2d")
+
+    ctx.lineWidth = 5;
+    ctx.strokeStyle = "red";
 })

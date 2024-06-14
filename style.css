@@ -9,13 +9,13 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+    overflow: hidden;
+    resize: both;
     position: absolute;
-}
-
-#field {
-    aspect-ratio: 1 / 1;
-    pointer-events: none; 
-    user-select: none;
+    background-image: url(images/field.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
 }
 
 #noteCanvas {
