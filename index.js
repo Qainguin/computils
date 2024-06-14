@@ -4,6 +4,7 @@ canvas.height = window.innerHeight;
 
 const ctx = canvas.getContext("2d");
 ctx.strokeStyle = "red";
+ctx.lineWidth = 4;
 
 let prevX = null;
 let prevY = null;
