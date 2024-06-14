@@ -1,6 +1,7 @@
 body {
     margin: 0rem;
     background-color: #ffffff;
+    overflow: hidden;
 }
 
 #fieldContainer {
